@@ -1,0 +1,135 @@
+/* Reset all margins, paddings and borders */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set base font size to 10px */
+html {
+  font-size: 62.5%;
+}
+
+/* Main page styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 2rem;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #666;
+}
+
+main {
+  padding: 4rem;
+  background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  margin-bottom: 2rem;
+}
+
+ul li {
+  margin-bottom: 1rem;
+}
+
+.cta {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cta:hover {
+  background-color: #666;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .menu-btn {
+    display: block;
+    margin-right: 2rem;
+    font-size: 2.4rem;
+    color: #333;
+    cursor: pointer;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+  }
+}
+
